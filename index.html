@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="js/main.js"></script>
 </head>
+
 <body>
     <!--Container-->
     <div class="container d-flex flex-direction-column w-100">
@@ -21,7 +23,8 @@
                 <p class="bold">Tuyển dụng</p>
                 <div class="searchbar d-flex align-items-center">
                     <i class="icon-lookup"></i>
-                    <input class="w-100" type="text" name="keyword" placeholder="Tìm kiếm tin tuyển dụng, ứng viên, nhân tài ...">
+                    <input class="w-100" type="text" name="keyword"
+                        placeholder="Tìm kiếm tin tuyển dụng, ứng viên, nhân tài ...">
                 </div>
             </div>
             <div class="header-right d-flex align-items-center">
@@ -44,16 +47,172 @@
         <div class="content d-flex flex-direction-row flex1">
             <!--sidebar-->
             <div class="sidebar h-100 image-sidebar">
-                <a href="">
-                    <i class="fa-solid fa-newspaper"></i>
-                    
-                </a>
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>Tin tuyển dụng</span>
+                    </li>
+                    <li class="menu-item active">
+                        <i class="fas fa-user"></i>
+                        <span>Ứng viên</span>
+                    </li>
+                    <li class="menu-item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Lịch</span>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Kho tiềm năng</span>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fas fa-tv"></i>
+                        <span>Chiến dịch tuyển dụng</span>
+                    </li>
+                    <li class="menu-item">
+                        <i class="far fa-check-square"></i>
+                        <span>Công việc</span>
+                    </li>
+                    <li class="menu-item">
+                        <i class="far fa-envelope"></i>
+                        <span>aiMarketing</span>
+                    </li>
+                    <li class="menu-item">
+                        <i class="far fa-comment-dots"></i>
+                        <span>Trao đổi với ứng viên</span>
+                    </li>
+                    <li class="menu-item">
+                        <i class="far fa-chart-bar"></i>
+                        <span>Báo cáo</span>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <span>Khác</span>
+                    </li>
+                </ul>
+                <div class="sidebar-footer">
+                    <button class="collapse-btn">
+                        <i class="fas fa-chevron-left"></i> Thu gọn
+                    </button>
+                </div>
             </div>
             <!-- Main content -->
-            <div class="main-contain h-100 flex1">
-
+            <div class="main-content h-100 flex1">
+                <div class="content-header d-flex justify-content-space-between align-items-center">
+                    <h2 class="page-title">Ứng viên</h2>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary"><i class="fas fa-plus"></i> Thêm ứng viên</button>
+                    </div>
+                </div>
+                
+                <div class="content-body">
+                    <div class="filter-bar d-flex justify-content-space-between align-items-center">
+                        <div class="search-filter">
+                            <input type="text" placeholder="Tìm kiếm danh trong danh sách">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="filter-options d-flex">
+                            <button class="btn btn-filter"><i class="fas fa-filter"></i></button>
+                            <button class="btn btn-list"><i class="fas fa-list"></i></button>
+                            <button class="btn btn-refresh"><i class="fas fa-sync"></i></button>
+                            <button class="btn btn-settings"><i class="fas fa-cog"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="candidates-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>Họ và tên</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Email</th>
+                                    <th>Chiến dịch tuyển dụng</th>
+                                    <th>Vị trí tuyển dụng</th>
+                                    <th>Tình trạng tuyển dụng</th>
+                                    <th>Vòng tuyển dụng</th>
+                                    <th>Đánh giá</th>
+                                    <th>Ngày ứng tuyển</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <div class="candidate-info">
+                                            <div class="avatar">LM</div>
+                                            <div class="name">Lê Mạnh Hùng</div>
+                                        </div>
+                                    </td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>24/10/2023</td>
+                                </tr>
+                                <tr class="highlight">
+                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <div class="candidate-info">
+                                            <div class="avatar">NM</div>
+                                            <div class="name">Nguyễn Minh Phong</div>
+                                            <div class="tag">Nhận viên</div>
+                                        </div>
+                                    </td>
+                                    <td>--</td>
+                                    <td>dinhvan.test02@gmail.com</td>
+                                    <td>QC/Tester/Kiểm thử phần mềm</td>
+                                    <td>QC/Tester (HN, HCM)</td>
+                                    <td>Đã tuyển</td>
+                                    <td>--</td>
+                                    <td>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>16/07/2023</td>
+                                </tr>
+                                <!-- Thêm các ứng viên khác tương tự -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="pagination d-flex justify-content-space-between align-items-center">
+                        <div class="pagination-info">
+                            Tổng: 5/362 bản ghi
+                        </div>
+                        <div class="pagination-controls">
+                            <select>
+                                <option>25</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select>
+                            <span>1 - 25 bản ghi</span>
+                            <button class="btn-prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="btn-next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+        </div>
+    </div>
 </body>
+
 </html>
