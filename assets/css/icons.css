@@ -1,0 +1,80 @@
+.icon-application {
+	mask-image: url('/assets/icons/ICON_system.svg');
+	mask-repeat: no-repeat;
+	mask-position: -1px -1px;
+	background-color: black;
+	width: 17px;
+	height: 18px;
+}
+
+.icon-lookup {
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -1px -658px;
+	background-color: rgb(94, 93, 93);
+	width: 17px;
+	height: 16px;
+}
+
+.icon-web-mouse {
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: 0 -608px;
+	background-color: rgb(94, 93, 93);
+	width: 21px;
+	height: 21px;
+	margin-right: 5px;
+}
+
+.icon-speaker {
+	mask-image: url('/assets/icons/icon_speaker.svg');
+	mask-repeat: no-repeat;
+	mask-position: -2px -3px;
+	background-color: rgb(94, 93, 93);
+	width: 20px;
+	height: 18px;
+}
+
+.icon-logo{
+	background: url('/assets/icons/logo.svg') no-repeat 0 0;
+	background-size: 70%;
+	width: 48px;
+	height: 48px;
+	margin: 12px 0 0 20px;
+}
+
+.icon-store{
+	background: url('/assets/icons/icon_store.svg') no-repeat 0 0;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-mess{
+	background: url('/assets/icons/icon_mess.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-notification {
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -2px -634px;
+	background-color: rgb(94, 93, 93);
+	width: 20px;
+	height: 21px;
+}
+
+.icon-more {
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -50px -610px;
+	background-color: rgb(94, 93, 93);
+	width: 20px;
+	height: 20px;
+}
+
+.icon-knowledge{
+	background: url('/assets/icons/icon_knowledge.svg') no-repeat -2px 0;
+	width: 20px;
+	height: 22px;
+}

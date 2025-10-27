@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(146, 251, 255, 0.363);
+}
+
+/*header*/
+.header {
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 20px;
+}
+.header-left {
+  height: 30px;
+}
+
+.header-left i {
+  margin-right: 10px;
+}
+
+.header-left p {
+  font-size: 20px;
+}
+
+.header-right {
+  height: 30px;
+}
+
+.header-right a {
+  font-size: 15px;
+  color: rgb(94, 93, 93);
+  margin-right: 20px;
+}
+.header-right a:hover {
+  color: rgb(58, 148, 250);
+}
+.header-right a:hover i {
+  background-color: rgb(58, 148, 250);
+}
+.header-right button {
+  margin: 0 10px;
+}
+.sidebar {
+  background-color: blueviolet;
+  width: 200px;
+}
+
+.main-contain {
+  background-color: rgba(114, 165, 81, 0.363);
+}
+
+.searchbar {
+  margin-left: 30px;
+  padding: 7px;
+  background-color: rgba(172, 163, 151, 0.445);
+  width: 350px;
+  border-radius: 5px;
+}
+
+.searchbar input {
+  border: none;
+  padding: 3px;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.user {
+  margin-left: 30px !important;
+}
+
+.image-sidebar {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #2f2f2f,
+    #e6b9b8
+  ); 
+  overflow: hidden;
+}
+
+.image-sidebar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/images/event-sidebar.svg") no-repeat center bottom;
+  background-size: contain;
+  opacity: 0.3; 
+  pointer-events: none; 
+}
+
+.sidebar-menu a{
+    text-decoration: none;
+    color: rgb(94, 93, 93);
+    font-size: 15px;
+}
+.sidebar-menu:hover{
+    background-color: rgba(170, 165, 165, 0.459);
+}
