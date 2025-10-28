@@ -37,6 +37,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: rgb(94, 93, 93);
 }
 
 .rounding{
@@ -54,4 +55,8 @@
 
 .active{
     background-color: #007bff;
+}
+
+.margin-left-right-10{
+    margin: 0 10px;
 }
