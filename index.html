@@ -17,6 +17,7 @@
     <div class="container d-flex flex-direction-column w-100">
         <!--Header-->
         <div class="header w-100 d-flex justify-content-space-between align-items-center">
+            <!-- Header-left -->
             <div class="header-left d-flex align-items-center">
                 <i class="icon-application"></i>
                 <i class="icon-logo"></i>
@@ -47,61 +48,63 @@
         <div class="content d-flex flex-direction-row flex1">
             <!--sidebar-->
             <div class="sidebar h-100 image-sidebar">
-
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <i class="fas fa-clipboard-list"></i>
+                        <i class="icon-clipboard-list"></i>
                         <span>Tin tuyển dụng</span>
                     </li>
                     <li class="menu-item active">
-                        <i class="fas fa-user"></i>
+                        <i class="icon-user"></i>
                         <span>Ứng viên</span>
                     </li>
                     <li class="menu-item">
-                        <i class="far fa-calendar-alt"></i>
+                        <i class="icon-calendar-alt"></i>
                         <span>Lịch</span>
                     </li>
                     <li class="menu-item">
-                        <i class="fas fa-puzzle-piece"></i>
+                        <i class="icon-puzzle-piece"></i>
                         <span>Kho tiềm năng</span>
                     </li>
                     <li class="menu-item">
-                        <i class="fas fa-tv"></i>
+                        <i class="icon-resources"></i>
                         <span>Chiến dịch tuyển dụng</span>
                     </li>
                     <li class="menu-item">
-                        <i class="far fa-check-square"></i>
+                        <i class="icon-check-square"></i>
                         <span>Công việc</span>
                     </li>
                     <li class="menu-item">
-                        <i class="far fa-envelope"></i>
+                        <i class="icon-marketing"></i>
                         <span>aiMarketing</span>
                     </li>
                     <li class="menu-item">
-                        <i class="far fa-comment-dots"></i>
+                        <i class="icon-comment-dots"></i>
                         <span>Trao đổi với ứng viên</span>
                     </li>
                     <li class="menu-item">
-                        <i class="far fa-chart-bar"></i>
+                        <i class="icon-chart-bar"></i>
                         <span>Báo cáo</span>
                     </li>
                     <li class="menu-item">
-                        <i class="fas fa-ellipsis-h"></i>
+                        <i class="icon-three-dots"></i>
                         <span>Khác</span>
                     </li>
                 </ul>
                 <div class="sidebar-footer">
                     <button class="collapse-btn">
-                        <i class="fas fa-chevron-left"></i> Thu gọn
+                        <i class="icon-collapse"></i> Thu gọn
                     </button>
                 </div>
             </div>
             <!-- Main content -->
             <div class="main-content h-100 flex1">
                 <div class="content-header d-flex justify-content-space-between align-items-center">
-                    <h2 class="page-title">Ứng viên</h2>
+                    <p class="bold size20">Ứng viên</h2>
                     <div class="action-buttons">
-                        <button class="btn btn-primary"><i class="fas fa-plus"></i> Thêm ứng viên</button>
+                        <div class="button-header d-flex align-items-center">
+                            <button class="btn-primary d-flex align-items-center border-right"><i class="fas fa-plus margin-right-5"></i>Thêm ứng viên</button>
+                            <button class="btn-primary d-flex align-items-center"><i class="icon-down"></i></button>
+                        </div>
                     </div>
                 </div>
                 
@@ -191,20 +194,24 @@
                             </tbody>
                         </table>
                     </div>
-                    
+                    <!-- Thanh phân trang -->
                     <div class="pagination d-flex justify-content-space-between align-items-center">
                         <div class="pagination-info">
-                            Tổng: 5/362 bản ghi
+                            Tổng: 5362 bản ghi
                         </div>
                         <div class="pagination-controls">
+                            <span>
+                                Số bản ghi / trang 
+                            </span>
                             <select>
+                                <option>15</option>
                                 <option>25</option>
                                 <option>50</option>
                                 <option>100</option>
                             </select>
                             <span>1 - 25 bản ghi</span>
-                            <button class="btn-prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="btn-next"><i class="fas fa-chevron-right"></i></button>
+                            <i class="icon-left"></i>
+                            <i class="icon-right"></i>
                         </div>
                     </div>
                 </div>

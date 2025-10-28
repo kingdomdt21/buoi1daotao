@@ -15,6 +15,10 @@
     justify-content: space-between;
 }
 
+.justify-content-space-around{
+    justify-content: space-around;
+}
+
 .justify-content-flex-end{
     justify-content: flex-end;
 }
@@ -66,6 +70,10 @@
     margin: 0 5px;
 }
 
+.margin-right-5{
+    margin-right: 5px;
+} 
+
 .btn-normal{
     padding: 8px;
     width: 35px;
@@ -74,3 +82,25 @@
     border: 1px solid rgb(94, 93, 93);
     border-radius: 5px;
 }
+
+.size20{
+    font-size: 20px;
+}
+
+.btn-primary{
+    background-color: rgb(74, 149, 248);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.btn-primary:hover{
+    background-color: #004fa3;
+}
+
+.border-right{
+    border-right: 1px solid rgba(58, 58, 58, 0.151);
+}
+
