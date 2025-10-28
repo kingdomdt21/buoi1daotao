@@ -78,3 +78,37 @@
 	width: 20px;
 	height: 22px;
 }
+
+.icon-filter{
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -42px -658px;
+	background-color: rgb(94, 93, 93);
+	width: 16px;
+	height: 16px;
+}
+.icon-export{
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -62px -658px;
+	background-color: rgb(94, 93, 93);
+	width: 16px;
+	height: 16px;
+}
+.icon-view{
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -4px -849px;
+	background-color: rgb(94, 93, 93);
+	width: 17px;
+	height: 15px;
+}
+.icon-settings{
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -102px -678px;
+	background-color: rgb(94, 93, 93);
+	width: 16px;
+	height: 16px;
+
+}

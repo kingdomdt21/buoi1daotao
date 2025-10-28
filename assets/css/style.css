@@ -214,31 +214,34 @@
 
 /* Thanh filter (thanh tìm kiếm & nút filter) */
 .filter-bar {
-  background-color: #f9fafc;
   border-radius: 8px;
   padding: 10px 15px;
   margin-bottom: 15px;
-  border: 1px solid #e5e7eb;
 }
 
 /* Ô tìm kiếm */
 .search-filter {
-  position: relative;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    border-radius: 5px;
+    color: rgb(94, 93, 93);
+    border: 1px solid;
 }
+
 .search-filter input {
-  padding: 7px 30px 7px 10px;
-  border-radius: 6px;
-  border: 1px solid #d1d5db;
-  background-color: #fff;
+  margin-left: 10px;
+  border: none;
+  padding: 2px;
   outline: none;
-  font-size: 13px;
+  background-color: transparent;
+  font-size: 14px;
 }
-.search-filter i {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #9ca3af;
+
+.search-filter:active{
+  color: rgb(154, 152, 255);
+  border: 1px solid;
 }
 
 /* Bảng danh sách ứng viên */
