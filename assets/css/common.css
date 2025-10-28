@@ -103,4 +103,9 @@
 .border-right{
     border-right: 1px solid rgba(58, 58, 58, 0.151);
 }
+.gap {
+  gap: 12px;
+}
+
+
 

@@ -1,3 +1,4 @@
+/* icon header left  */
 .icon-application {
 	mask-image: url('/assets/icons/ICON_system.svg');
 	mask-repeat: no-repeat;
@@ -16,6 +17,8 @@
 	height: 16px;
 }
 
+
+/* icon header right  */
 .icon-web-mouse {
 	mask-image: url('/assets/icons/ICON.svg');
 	mask-repeat: no-repeat;
@@ -79,6 +82,14 @@
 	height: 22px;
 }
 
+.icon-users{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+
+/* icon main content  */
 .icon-filter{
 	mask-image: url('/assets/icons/ICON.svg');
 	mask-repeat: no-repeat;
@@ -122,6 +133,24 @@
 	height: 7px;
 }
 
+.icon-tick{
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -196px -1036px;
+	background-color: green;
+	width: 18px;
+	height: 13px;
+}
+
+.icon-add{
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -196px -116px;
+	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+}
 /* icon side bar  */
 .icon-clipboard-list {
 	mask-image: url('/assets/icons/ICON.svg');
@@ -221,7 +250,7 @@
 	width: 7px;
 	height: 12px;
 }
-
+ /* icon phân trang  */
 .icon-left {
 	mask-image: url('/assets/icons/ICON.svg');
 	mask-repeat: no-repeat;
@@ -237,4 +266,14 @@
 	background-color: #040404;
 	width: 8px;
 	height: 12px;
+}
+
+/* Form add  */
+.icon-add-blue{
+	mask-image: url('/assets/icons/ICON.svg');
+	mask-repeat: no-repeat;
+	mask-position: -196px -116px;
+	background-color: #2708ed;
+	width: 15px;
+	height: 15px;
 }

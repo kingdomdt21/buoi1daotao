@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="js/main.js"></script>
 </head>
 
@@ -40,7 +39,7 @@
                 <button class="btn-menu icon-more"></button>
                 <button class="btn-menu icon-knowledge"></button>
                 <button class="btn-menu user">
-                    <img class="rounding" src="assets/images/user.png" alt="">
+                    <img class="icon-users" src="assets/images/LT0YJBOP.jpg" alt="">
                 </button>
             </div>
         </div>
@@ -102,13 +101,13 @@
                     <p class="bold size20">Ứng viên</h2>
                     <div class="action-buttons">
                         <div class="button-header d-flex align-items-center">
-                            <button class="btn-primary d-flex align-items-center border-right"><i class="fas fa-plus margin-right-5"></i>Thêm ứng viên</button>
+                            <button class="btn-primary d-flex align-items-center border-right" onclick="form_add()"><i class="icon-add"></i>Thêm ứng viên</button>
                             <button class="btn-primary d-flex align-items-center"><i class="icon-down"></i></button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="content-body">
+                <div class="content-body d-flex flex-direction-column">
                     <div class="filter-bar d-flex justify-content-flex-end align-items-center">
                         <div class="search-filter d-flex align-items-center">
                             <i class="icon-lookup"></i>
@@ -122,7 +121,7 @@
                         </div>
                     </div>
                     
-                    <div class="candidates-table">
+                    <div class="candidates-table flex1">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -136,10 +135,32 @@
                                     <th>Vòng tuyển dụng</th>
                                     <th>Đánh giá</th>
                                     <th>Ngày ứng tuyển</th>
+                                     <th>Nguồn ứng viên</th>
+                                    <th>Trình độ đào tạo</th>
+                                    <th>Nơi đào tạo</th>
+                                    <th>Chuyên ngành</th>
+                                    <th>Nơi làm việc gần đây</th>
+                                    <th>Nhân sự khai thác</th>
+                                    <th>Đơn vị sử dụng</th>
+                                    <th>Phù hợp với chân dung</th>
+                                    <th>Khu vực</th>
+                                    <th>Ngươi giới thiệu</th>
+                                    <th>Thông tin tiếp nhận</th>
+                                    <th>Thuộc kho tiềm năng </th>
+                                    <th>Tài khoản tổng ứng viên</th>
+                                    <th>Thẻ</th>
+                                    <th>Trạng thái</th>
+                                    <th>Giới tính</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Lý do loại</th>
+                                    <th>Cộng tác viên</th>
+                                    <th>Ngày tiếp nhận</th>
+                                    <th>Trạng thái mời nhận việc</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                               <tr>
                                     <td><input type="checkbox"></td>
                                     <td>
                                         <div class="candidate-info">
@@ -147,21 +168,13 @@
                                             <div class="name">Lê Mạnh Hùng</div>
                                         </div>
                                     </td>
+                                    <td>0999110999</td>
                                     <td>--</td>
                                     <td>--</td>
                                     <td>--</td>
                                     <td>--</td>
                                     <td>--</td>
                                     <td>--</td>
-                                    <td>
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </td>
                                     <td>24/10/2023</td>
                                 </tr>
                                 <tr class="highlight">
@@ -169,8 +182,15 @@
                                     <td>
                                         <div class="candidate-info">
                                             <div class="avatar">NM</div>
-                                            <div class="name">Nguyễn Minh Phong</div>
-                                            <div class="tag">Nhận viên</div>
+
+                                            <div class="info-details d-flex flex-direction-column">
+                                                <div class="name">Nguyễn Minh Phong</div>
+                                                <div class="d-flex">
+                                                    <div class="icon-tick"></div>
+                                                    <span style="color: #10b981;">Nhân viên</span>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </td>
                                     <td>--</td>
@@ -179,18 +199,23 @@
                                     <td>QC/Tester (HN, HCM)</td>
                                     <td>Đã tuyển</td>
                                     <td>--</td>
-                                    <td>
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </td>
+                                    <td>--</td>
+                                    <td>--</td>
                                     <td>16/07/2023</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+
                                 </tr>
-                                <!-- Thêm các ứng viên khác tương tự -->
+
                             </tbody>
                         </table>
                     </div>
@@ -214,6 +239,119 @@
                             <i class="icon-right"></i>
                         </div>
                     </div>
+
+                    <!-- Form add -->
+                     
+                    <!-- Modal popup -->
+                    <div id="modalAdd" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h2>Thêm ứng viên</h2>
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        </div>
+
+                        <div class="modal-body">
+                        <form id="formAdd">
+                            <!-- Upload file -->
+                            <div class="upload-box" id="uploadBox">
+                            <input type="file" id="fileInput" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" hidden>
+                            <label for="fileInput" class="upload-file-label">
+                                <span class="upload-file-text">Kéo thả hoặc bấm vào đây để tải CV lên</span><br>
+                                <span class="upload-file-note">Chấp nhận file .doc, .docx, .pdf, .jpg, .jpeg, .png (Dung lượng &lt; hơn 15 Mb)</span>
+                            </label>
+                            </div>
+
+                            <!-- Layout image -->
+                            <div class="d-flex">
+                            <div class="left-modelAdd">
+                                <label for="imageInput" class="upload-image-label">
+                                <div class="image-preview" id="imagePreview">Ảnh</div>
+                                </label>
+                                <input type="file" id="imageInput" accept="image/png, image/jpeg" hidden>
+                            </div>
+
+                            <div class="right-modelAdd">
+                                <label>Họ và tên <span class="text-danger">*</span></label>
+                                <input type="text" placeholder="Nhập họ và tên" required>
+
+                                <div class="d-flex gap">
+                                <div class="flex-1">
+                                    <label>Ngày sinh</label>
+                                    <input type="date" placeholder="dd/MM/yyyy">
+                                </div>
+                                <div class="flex-1">
+                                    <label>Giới tính</label>
+                                    <select>
+                                    <option value="">Chọn giới tính</option>
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                    </select>
+                                </div>
+                                </div>
+
+                                <label>Khu vực</label>
+                                <div class="d-flex">
+                                <select>
+                                    <option>Chọn giá trị</option>
+                                </select>
+                                <button type="button" class="btn-more">⋯</button>
+                                </div>
+
+                                <div class="d-flex gap">
+                                <div class="flex-1">
+                                    <label>Số điện thoại</label>
+                                    <input type="tel" placeholder="Nhập số điện thoại">
+                                </div>
+                                <div class="flex-1">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Nhập Email">
+                                </div>
+                                </div>
+
+                                <label>Địa chỉ</label>
+                                <input type="text" placeholder="Nhập địa chỉ">
+
+                                <h4 class="section-title">HỌC VẤN</h4>
+                                <div class="d-flex flex-direction-column">
+                                <div class="d-flex flex-direction-row align-items-center justify-content-space-between">
+                                    <label>Trình độ đào tạo</label>
+                                    <div class="d-flex flex-direction-row">
+                                    <input type="text" placeholder="Nhập trình độ đào tạo">
+                                    <button type="button" class="btn-more">+</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-direction-row align-items-center justify-content-space-between">
+                                    <label>Nơi đào tạo</label>
+                                    <div class=" d-flex flex-direction-row">
+                                    <input type="text" placeholder="Nhập nơi đào tạo">
+                                    <button type="button" class="btn-more">+</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-direction-row align-items-center justify-content-space-between">
+                                    <label>Chuyên ngành</label>
+                                    <div class="d-flex flex-direction-row">
+                                    <input type="text" placeholder="Nhập chuyên ngành">
+                                    <button type="button" class="btn-more">+</button>
+                                    </div>
+                                </div>
+                                </div>
+                                <hr>
+                                <span style="color: blue;">+ Thêm học vấn </span>
+
+                            </div>
+                            
+                            </div>
+                                </form>
+                         </div>
+                         <!-- Footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn-cancel" onclick="closeModal()">Hủy</button>
+                            <button type="submit" class="btn-save">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
                 </div>
             </div>
         </div>
