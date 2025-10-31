@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/icons.css">
-    <script src="js/main.js"></script>
+    
 </head>
 
 <body>
@@ -19,7 +19,10 @@
             <!-- Header-left -->
             <div class="header-left d-flex align-items-center">
                 <i class="icon-application"></i>
-                <i class="icon-logo"></i>
+                <div class="icon-wrapper">
+                    <i class="icon-logo"></i>
+                    <img class="event-header" src="assets/icons/event-header.4e172f2f88c69001.svg" alt="event">
+                </div>
                 <p class="bold">Tuyển dụng</p>
                 <div class="searchbar d-flex align-items-center">
                     <i class="icon-lookup"></i>
@@ -33,8 +36,17 @@
                     Website tuyển dụng
                 </a>
                 <button class="btn-menu icon-speaker"></button>
-                <button class="btn-menu icon-store"></button>
-                <button class="btn-menu icon-mess"></button>
+                <div class="icon-badge">
+                    <button class="btn-menu icon-store"></button>
+                    <span class="badge">1</span>
+                </div>
+
+                <button class="btn-menu icon-user-add"></button>
+
+                <div class="icon-badge">
+                    <button class="btn-menu icon-mess"></button>
+                    <span class="badge">1</span>
+                </div>
                 <button class="btn-menu icon-notification"></button>
                 <button class="btn-menu icon-more"></button>
                 <button class="btn-menu icon-knowledge"></button>
@@ -46,7 +58,7 @@
         <!--Content-->
         <div class="content d-flex flex-direction-row flex1">
             <!--sidebar-->
-            <div class="sidebar h-100 image-sidebar">
+            <div class="sidebar h-100 image-sidebar" id="sidebar">
                 <ul class="menu-list">
                     <li class="menu-item">
                         <i class="icon-clipboard-list"></i>
@@ -90,8 +102,8 @@
                     </li>
                 </ul>
                 <div class="sidebar-footer">
-                    <button class="collapse-btn">
-                        <i class="icon-collapse"></i> Thu gọn
+                    <button class="collapse-btn" id="collapseBtn">
+                        <i class="icon-collapse"></i> <span>Thu gọn</span>
                     </button>
                 </div>
             </div>
@@ -159,7 +171,7 @@
                                     <th>Trạng thái mời nhận việc</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="candidate-list-body">
                                <tr>
                                     <td><input type="checkbox"></td>
                                     <td>
@@ -337,7 +349,63 @@
                                 </div>
                                 <hr>
                                 <span style="color: blue;">+ Thêm học vấn </span>
-
+                                <div class="d-flex flex-wrap gap">
+                                <div class="form-item">
+                                    <label>Ngày ứng tuyển</label>
+                                    <input type="date" placeholder="dd/MM/yyyy">
+                                </div>
+                                <div class="form-item">
+                                    <label>Nguồn ứng viên</label>
+                                    <select>
+                                    <option value="">Chọn nguồn ứng viên</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <label>Nhân sự khai thác</label>
+                                    <select>
+                                    <option value="">Chọn nguồn nhân sự</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <label>Cộng tác viên</label>
+                                    <select>
+                                    <option value="">Chọn công tác viên</option>
+                                    </select>
+                                </div>
+                                </div>
+                                <span style="color: blue;">+ Thêm người giới thiệu </span>
+                        
+                                <div class="d-flex align-items-center">
+                                <input type="checkbox" class="checkadd">
+                                <span class="dx-checkbox-text">Thêm nhanh người tham chiếu vào kho ứng viên</span>
+                                </div>
+ 
+                                <div class="flex-1">
+                                    <label>Nơi làm việc gần đây</label>
+                                    <input type="text" placeholder="Nhập nơi làm việc gần đây">
+                                </div>
+                                <hr>
+                                <span style="color: blue;">+ Thêm kinh nghiệm làm việc </span>
+                                <div class="flex-1">
+                                    <label>Nơi làm việc</label>
+                                    <input type="text" placeholder="Nhập nơi làm việc">
+                                </div>
+                                <div class="flex-1">
+                                <label>Thời gian</label>
+                                <div class="date-range">
+                                    <input type="date" class="date-input" placeholder="dd/MM/yyyy">
+                                    <span class="separator">&mdash;</span>
+                                    <input type="date" class="date-input" placeholder="dd/MM/yyyy">
+                                </div>
+                                </div>
+                                <div class="flex-1">
+                                    <label>Vị trí công việc</label>
+                                    <input type="text" placeholder="Nhập vị trí công việc">
+                                </div>
+                                <div class="flex-1">
+                                    <label>Mô tả công việc</label>
+                                    <textarea class="arae" placeholder="Nhập mô tả công việc"></textarea>
+                                </div>
                             </div>
                             
                             </div>
@@ -358,6 +426,10 @@
     </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
+    <script type="module" src="js/ultils/app.js"></script>
+    <script type="module" src="js/ultils/candidate-data.js"></script>
+   
 </body>
 
 </html>

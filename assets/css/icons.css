@@ -87,7 +87,11 @@
   height: 30px;
   border-radius: 15px;
 }
-
+.icon-user-add{
+	background: url('/assets/icons/icon_source_v2.svg') no-repeat -296px -9px;
+	width: 19px;
+	height: 13px;
+}
 
 /* icon main content  */
 .icon-filter{
